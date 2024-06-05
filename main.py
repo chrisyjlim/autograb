@@ -1,18 +1,3 @@
-# You must create a Python or Node.js program that finds a matching Vehicle ID for each description in the provided input.txt file.
-
-# The output of your program must show the matching Vehicle ID for each description, as well as a confidence score from 0 to 10. A confidence score of 0 would indicate a very uncertain match, whereas a confidence score of 10 would indicate that the match was definitely correct.
-
-# For example, if the description did not specify the transmission type of the car, the confidence score would likely be lower than a description that did specify the transmission type (Automatic or Manual).
-
-# If there are multiple vehicles which you find to be the most likely match, you should return the vehicle which has the most listings associated with it in the listing table.
-
-# Your program must interact with the vehicle and listing tables by running SQL queries from within your program. You should not need to edit the SQL data.
-
-# You can use a combination of regular expressions, sql and standard algorithms/logic to match the vehicles. Your program should print the vehicle match response for each of the provided test cases - both the matching vehicle ID as well as the confidence score.
-
-# Example Output
-
-
 import csv
 import re
 from modules.sql import SQLClient
