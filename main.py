@@ -27,7 +27,7 @@ class VehicleMatch():
                         transmission_type=result[4], 
                         fuel_type=result[5], 
                         drive_type=result[6], 
-                        matching_score=result[7])\
+                        matching_score=result[7])
                         
         s = f"""Input: {search_string}\n"""\
             f"""Vehicle ID: {vr.id}\n"""\
