@@ -26,7 +26,7 @@ class VehicleMatch():
 
     # get and format the SQL for the matching process
     def get_sql(self, search_string: str):
-        with open("matching_sql.sql", 'r') as file:
+        with open("sql/matching.sql", 'r') as file:
             data = file.read()
         sql = Template(data).substitute(search_value=search_string)
         return sql
